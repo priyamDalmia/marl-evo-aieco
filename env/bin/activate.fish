@@ -52,8 +52,8 @@ if test -z "$VIRTUAL_ENV_DISABLE_PROMPT"
         set -l old_status $status
 
         # Prompt override?
-        if test -n "(aieco) "
-            printf "%s%s" "(aieco) " (set_color normal)
+        if test -n "(env) "
+            printf "%s%s" "(env) " (set_color normal)
         else
             # ...Otherwise, prepend env
             set -l _checkbase (basename "$VIRTUAL_ENV")
